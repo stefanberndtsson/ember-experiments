@@ -24,8 +24,7 @@ var rootElement = thisScriptTag.dataset.rootElement;
 var scriptHost = thisScriptTag.dataset.srcDir;
 
 Ex1 = Ember.Application.create({
-    
-    apiUrlBase: 'http://localhost:3034',
+    apiUrlBase: 'http://nmdb-api.nocrew.org',
     rootElement: '#'+rootElement,
     Resolver: Ember.DefaultResolver.extend({
         resolveTemplate: function(parsedName) {
