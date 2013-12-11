@@ -1,5 +1,3 @@
-Ember.FEATURES["query-params"] = true;
-
 function loadScriptSync(url) {
     console.log("loadScriptSync: ", url);
     $.ajaxSetup({async: false});
@@ -24,7 +22,6 @@ var rootElement = thisScriptTag.dataset.rootElement;
 var scriptHost = thisScriptTag.dataset.srcDir;
 
 Ex2 = Ember.Application.create({
-    apiUrlBase: 'http://nmdb-api.nocrew.org',
     rootElement: '#'+rootElement,
     Resolver: Ember.DefaultResolver.extend({
         resolveTemplate: function(parsedName) {
